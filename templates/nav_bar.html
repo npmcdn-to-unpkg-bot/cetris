@@ -1,0 +1,46 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Cetris</title>
+  <link rel="stylesheet" href="{% static 'libs/bootstrap/dist/css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'libs/magnific-popup/dist/magnific-popup.css' %}">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" href="{% static 'css/media.css' %}">
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="navigation_wrapper">
+      <div class="row">
+ <!-- Fixed navbar -->
+        <div class="navbar navbar-default" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+	          <a href="/" class="navbar-brand logo"><img src="{% static 'img/logo.png' %}" alt="logo"></a>
+            </div>
+            <div class="navbar-collapse collapse navigation_list">
+              <ul class="nav navbar-nav">
+               <li><a href="/product/get/1">Продукция</a></li>
+               <li><a href="/calculator/">Кулькулятор цен</a></li>
+               <li><a href="/instruction/">Инструкции</a></li>
+               <li><a href="/references/">Референции</a></li>
+               <li><a href="/about/">О нас</a></li>
+               <li><a href="/contacts/">Контакты</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+  </div>

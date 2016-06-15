@@ -1,0 +1,68 @@
+{% load staticfiles %}
+{% include 'nav_bar.html' %}
+  <div class="product_home">
+    <div class="container">
+      <div class="row">
+        <div class="separator"></div>
+        <h1>{{ product.product_title }}</h1>
+        <div class="col-sm-8 product_content">
+            {{ product.product_content|linebreaks }}
+          <h3>UZSTĀDĪŠANAS NOSACĪJUMI</h3>
+          <ul>
+              {% if product.product_rules1 %}
+                <li>{{ product.product_rules1 }}</li>
+              {% endif %}
+
+              {% if product.product_rules2 %}
+                 <li>{{ product.product_rules2 }}</li>
+              {% endif %}
+
+              {% if product.product_rules3 %}
+                <li>{{ product.product_rules3 }}</li>
+              {% endif %}
+
+              {% if product.product_rules4 %}
+                 <li>{{ product.product_rules4 }}</li>
+              {% endif %}
+          </ul>
+            {% if product.product_data %}
+                <div class="btn btn-pas"><a href="{{ MEDIA_URL }}{{ product.product_data.url }}">Технический паспорт</a></div>
+            {% else %}
+                <div class="btn btn-pas"><a href="#">Технический паспорт отсутствует</a></div>
+            {% endif %}
+        </div>
+        <div class="sidebar_product col-sm-4">
+            <ul>
+                {% for product in sidebar %}
+                    <a href="/product/get/{{ product.id }}">
+                        <li class="row">
+                            <div class="col-md-3">
+                                <img src="{{ MEDIA_URL }}{{ product.product_images.url }}" alt="image">
+                            </div>
+                            <div class="col-md-9">
+                                <p>{{ product.product_title }}</p>
+                            </div>
+                        </li>
+                    </a>
+                {% endfor %}
+            </ul>
+        </div>
+      </div>
+      <div class="parent-container">
+          {% if product.product_images %}
+            <a href="{{ MEDIA_URL }}{{ product.product_images.url }}"><img src="{{ MEDIA_URL }}{{ product.product_images.url }}" alt="image"></a>
+          {% endif %}
+      {% if product.product_images2 %}
+            <a href="{{ MEDIA_URL }}{{ product.product_images2.url }}"><img src="{{ MEDIA_URL }}{{ product.product_images2.url }}" alt="image"></a>
+          {% endif %}
+      {% if product.product_images3 %}
+            <a href="{{ MEDIA_URL }}{{ product.product_images3.url }}"><img src="{{ MEDIA_URL }}{{ product.product_images3.url }}" alt="image"></a>
+          {% endif %}
+      {% if product.product_images4 %}
+            <a href="{{ MEDIA_URL }}{{ product.product_images4.url }}"><img src="{{ MEDIA_URL }}{{ product.product_images4.url }}" alt="image"></a>
+          {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% include 'footer.html' %}

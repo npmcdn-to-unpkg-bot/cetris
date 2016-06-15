@@ -1,0 +1,82 @@
+{% load staticfiles %}
+{% include 'nav_bar.html' %}
+  <div class="product_home">
+    <div class="container">
+      <div class="row">
+        <div class="separator"></div>
+        <h1>Referencijas</h1>
+        <div class="gallery">
+          <div class="btn_gal col-sm-3">
+            <ul>
+              <li class="filter" data-filter=".pr_home">Privātmājas</li>
+              <li class="filter" data-filter=".live_home">Dzīvojamās mājas</li>
+              <li class="filter" data-filter=".building">Komercbūves</li>
+              <li class="filter" data-filter=".industr_building">Industriālās būves</li>
+              <li class="filter" data-filter=".cap">Pamati un cokols</li>
+              <li class="filter" data-filter=".balc">Balkoni</li>
+              <li class="filter" data-filter=".ind_sol">Individuālie risinājumi</li>
+              <li class="filter" data-filter=".base">Pamatnes</li>
+            </ul>
+          </div>
+          <div id="Container" class="col-sm-9">
+
+            {% for image in gallery %}
+
+                {% if image.image_category == "Privātmājas" %}
+                    <div class="mix pr_home">
+                        <img src="{{ MEDIA_URL }}{{ image.references_image.url }}" alt="{{ image.image_category }}">
+                    </div>
+                {% endif %}
+
+                {% if image.image_category == "Dzīvojamās mājas" %}
+                    <div class="mix live_home">
+                        <img src="{{ MEDIA_URL }}{{ image.references_image.url }}" alt="{{ image.image_category }}">
+                    </div>
+                {% endif %}
+
+                {% if image.image_category == "Komercbūves" %}
+                    <div class="mix building">
+                        <img src="{{ MEDIA_URL }}{{ image.references_image.url }}" alt="{{ image.image_category }}">
+                    </div>
+                {% endif %}
+
+                {% if image.image_category == "Industriālās būves" %}
+                    <div class="mix industr_building">
+                        <img src="{{ MEDIA_URL }}{{ image.references_image.url }}" alt="{{ image.image_category }}">
+                    </div>
+                {% endif %}
+
+                {% if image.image_category == "Pamati un cokols" %}
+                    <div class="mix cap">
+                        <img src="{{ MEDIA_URL }}{{ image.references_image.url }}" alt="{{ image.image_category }}">
+                    </div>
+                {% endif %}
+
+                {% if image.image_category == "Balkoni" %}
+                    <div class="mix balc">
+                        <img src="{{ MEDIA_URL }}{{ image.references_image.url }}" alt="{{ image.image_category }}">
+                    </div>
+                {% endif %}
+
+                {% if image.image_category == "Pamatnes" %}
+                    <div class="mix ind_sol">
+                        <img src="{{ MEDIA_URL }}{{ image.references_image.url }}" alt="{{ image.image_category }}">
+                    </div>
+                {% endif %}
+
+                {% if image.image_category == "Individuālie risinājumi" %}
+                    <div class="mix base">
+                        <img src="{{ MEDIA_URL }}{{ image.references_image.url }}" alt="{{ image.image_category }}">
+                    </div>
+                {% endif %}
+
+            {% endfor %}
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include 'footer.html' %}

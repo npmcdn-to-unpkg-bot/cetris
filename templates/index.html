@@ -1,0 +1,611 @@
+{% load staticfiles %}
+{% include "nav_bar.html" %}
+  <div class="home">
+        <div class="home_content">
+          <div class="col-sm-9 content_block">
+            <h1>Цементно-стружечная панель</h1>
+            <hr>
+            <h3>1000 возможностей</h3>
+            <!-- <div class="grid">
+              <a href="#"><div class="grid-item grid-item--width3 walls_p"><h3>Стены</h3></div></a>
+              <a href="#"><div class="grid-item roofs_p"><h3>Крыши</h3></div></a>
+              <a href="#"><div class="grid-item grid-item--width3 systems_p"><h3>Противопожарные системы</h3></div></a>
+              <a href="#"><div class="grid-item grid-item--height2 facade_p"><h3>Фасады</h3></div></a>
+              <a href="#"><div class="grid-item grid-item--height2 mines_p"><h3>Шахты лифтов</h3></div></a>
+              <a href="#"><div class="grid-item grid-item--height2 grid-item--width2 floors_p"><h3>Полы</h3></div></a>
+              <a href="#"><div class="grid-item grid-item--height2 ceilings_p"><h3>Подвесные потолки</h3></div></a>
+              <a href="#"><div class="grid-item balcones_p"><h3>Балконы</h3></div></a>
+              <a href="#"><div class="grid-item grid-item--width2 transports_p"><h3>Транспортные сооружения</h3></div></a>
+              <a href="#"><div class="grid-item hobby_p"><h3>Хобби</h3></div></a>
+              <a href="#"><div class="grid-item formworks_p"><h3>Несъемная опалубка</h3></div></a>
+            </div> -->
+          </div>
+          <div class="col-sm-3 content_menu">
+            <h2>Выберите панели по применению</h2>
+            <ul>
+              <li class="walls_l">Стены</li>
+              <li class="facade_l">Фасады</li>
+              <li class="floors_l">Полы</li>
+              <li class="roofs_l">Крыши</li>
+              <li class="systems_l">Противопожарные системы</li>
+              <li class="ceilings_l">Подвесные потолки и цоколи</li>
+              <li class="formworks_l">Несъемная опалубка</li>
+              <li class="balcones_l">Балконы</li>
+              <li class="transports_l">Транспортные сооружения</li>
+              <li class="hobby_l">Хобби</li>
+            </ul>
+
+            <div class="content_menu_hide walls">
+              <h2>Стены</h2>
+              <ul class="products">
+                    {% for product in products %}
+                        {% if product.product_category == "Sienas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category2 == "Sienas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category3 == "Sienas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category4 == "Sienas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category5 == "Sienas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category6 == "Sienas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category7 == "Sienas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category8 == "Sienas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category9 == "Sienas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category10 == "Sienas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+              </ul>
+              <ul class="info_elements">
+                <li>
+                  <a href="/references/">Референции</a>
+                </li>
+              </ul>
+              <a href="#" class="link_back">Вернуться к выбору</a>
+            </div>
+
+            <div class="content_menu_hide facade">
+              <h2>Фасады</h2>
+              <ul class="products">
+                    {% for product in products %}
+                        {% if product.product_category == "Fasādes" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category2 == "Fasādes" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category3 == "Fasādes" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category4 == "Fasādes" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category5 == "Fasādes" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category6 == "Fasādes" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category7 == "Fasādes" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category8 == "Fasādes" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category9 == "Fasādes" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category10 == "Fasādes" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+              </ul>
+              <ul class="info_elements">
+                <li class="col-sm-6">
+                  <a href="/references/">Референции</a>
+                </li>
+              </ul>
+              <a href="#" class="link_back">Вернуться к выбору</a>
+            </div>
+
+            <div class="content_menu_hide floors">
+              <h2>Полы</h2>
+              <ul class="products">
+                    {% for product in products %}
+                        {% if product.product_category == "Grīdas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category2 == "Grīdas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category3 == "Grīdas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category4 == "Grīdas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category5 == "Grīdas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category6 == "Grīdas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category7 == "Grīdas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category8 == "Grīdas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category9 == "Grīdas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category10 == "Grīdas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+              </ul>
+              <ul class="info_elements">
+                <li class="col-sm-6">
+                  <a href="/references/">Референции</a>
+                </li>
+              </ul>
+              <a href="#" class="link_back">Вернуться к выбору</a>
+            </div>
+
+            <div class="content_menu_hide roofs">
+              <h2>Крыши</h2>
+              <ul class="products">
+                    {% for product in products %}
+                        {% if product.product_category == "Jumti" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category2 == "Jumti" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category3 == "Jumti" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category4 == "Jumti" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category5 == "Jumti" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category6 == "Jumti" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category7 == "Jumti" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category8 == "Jumti" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category9 == "Jumti" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category10 == "Jumti" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+              </ul>
+              <ul class="info_elements">
+                <li class="col-sm-6">
+                  <a href="/references/">Референции</a>
+                </li>
+              </ul>
+              <a href="#" class="link_back">Вернуться к выбору</a>
+            </div>
+
+            <div class="content_menu_hide systems">
+              <h2>Противопожарные системы</h2>
+              <ul class="products">
+                    {% for product in products %}
+                        {% if product.product_category == "Ugunsdrošība" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category2 == "Ugunsdrošība" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category3 == "Ugunsdrošība" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category4 == "Ugunsdrošība" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category5 == "Ugunsdrošība" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category6 == "Ugunsdrošība" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category7 == "Ugunsdrošība" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category8 == "Ugunsdrošība" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category9 == "Ugunsdrošība" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category10 == "Ugunsdrošība" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+              </ul>
+              <ul class="info_elements">
+                <li class="col-sm-6">
+                  <a href="/references/">Референции</a>
+                </li>
+              </ul>
+              <a href="#" class="link_back">Вернуться к выбору</a>
+            </div>
+
+            <div class="content_menu_hide ceilings">
+              <h2>Подвесные потолки и цоколи</h2>
+              <ul class="products">
+                    {% for product in products %}
+                        {% if product.product_category == "Pamati un cokols" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category2 == "Pamati un cokols" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category3 == "Pamati un cokols" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category4 == "Pamati un cokols" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category5 == "Pamati un cokols" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category6 == "Pamati un cokols" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category7 == "Pamati un cokols" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category8 == "Pamati un cokols" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category9 == "Pamati un cokols" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category10 == "Pamati un cokols" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+              </ul>
+              <ul class="info_elements">
+                <li class="col-sm-6">
+                  <a href="/references/">Референции</a>
+                </li>
+              </ul>
+              <a href="#" class="link_back">Вернуться к выбору</a>
+            </div>
+
+            <div class="content_menu_hide formworks">
+              <h2>Несъемная опалубка</h2>
+              <ul class="products">
+                    {% for product in products %}
+                        {% if product.product_category == "Individuālie risinājumi" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category2 == "Individuālie risinājumi" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category3 == "Individuālie risinājumi" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category4 == "Individuālie risinājumi" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category5 == "Individuālie risinājumi" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category6 == "Individuālie risinājumi" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category7 == "Individuālie risinājumi" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category8 == "Individuālie risinājumi" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category9 == "Individuālie risinājumi" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category10 == "Individuālie risinājumi" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+              </ul>
+              <ul class="info_elements">
+                <li class="col-sm-6">
+                  <a href="/references/">Референции</a>
+                </li>
+              </ul>
+              <a href="#" class="link_back">Вернуться к выбору</a>
+            </div>
+
+            <div class="content_menu_hide balcones">
+              <h2>Балконы</h2>
+              <ul class="products">
+                    {% for product in products %}
+                        {% if product.product_category  == "Balkoni" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category2  == "Balkoni" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category3  == "Balkoni" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category4  == "Balkoni" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category5  == "Balkoni" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category6  == "Balkoni" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category7  == "Balkoni" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category8  == "Balkoni" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category9  == "Balkoni" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category10  == "Balkoni" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+              </ul>
+              <ul class="info_elements">
+                <li class="col-sm-6">
+                  <a href="/references/">Референции</a>
+                </li>
+              </ul>
+              <a href="#" class="link_back">Вернуться к выбору</a>
+            </div>
+
+            <div class="content_menu_hide transports">
+              <h2>Дорожно-строительная техника</h2>
+              <ul class="products">
+                    {% for product in products %}
+                        {% if product.product_category == "Ceļu konstrukcijas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category2 == "Ceļu konstrukcijas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category3 == "Ceļu konstrukcijas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category4 == "Ceļu konstrukcijas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category5 == "Ceļu konstrukcijas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category6 == "Ceļu konstrukcijas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category7 == "Ceļu konstrukcijas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category8 == "Ceļu konstrukcijas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category9 == "Ceļu konstrukcijas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category10 == "Ceļu konstrukcijas" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+              </ul>
+              <ul class="info_elements">
+                <li class="col-sm-6">
+                  <a href="/references/">Референции</a>
+                </li>
+              </ul>
+              <a href="#" class="link_back">Вернуться к выбору</a>
+            </div>
+
+
+            <div class="content_menu_hide hobby">
+              <h2>Хобби</h2>
+              <ul class="products">
+                    {% for product in products %}
+                        {% if product.product_category == "Hobijs" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category2 == "Hobijs" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category3 == "Hobijs" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category4 == "Hobijs" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category5 == "Hobijs" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category6 == "Hobijs" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category7 == "Hobijs" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category8 == "Hobijs" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category9 == "Hobijs" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                        {% if product.product_category10 == "Hobijs" %}
+                            <li><a href="/product/get/{{ product.id }}">{{ product.product_title.upper }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+              </ul>
+              <ul class="info_elements">
+                <li class="col-sm-6">
+                  <a href="/references/">Референции</a>
+                </li>
+              </ul>
+              <a href="#" class="link_back">Вернуться к выбору</a>
+            </div>
+          </div>
+          <div class="mobile_top">
+            <div class="mobile_top_banner"></div>
+            <a href="#">
+              <div class="mobile_top_panel_1">
+                <div class="mobile_top_line"></div>
+                <h1>Панели без поверхностной обработки</h1>
+              </div>
+            </a>
+            <a href="#">
+              <div class="mobile_top_panel_2">
+                <div class="mobile_top_line"></div>
+                <h1>Панели с поверхностной обработки</h1>
+              </div>
+            </a>
+            <a href="#">
+              <div class="mobile_top_panel_3">
+                <div class="mobile_top_line"></div>
+                <h1>Контакты</h1>
+              </div>
+            </a>
+          </div>
+        </div>
+  </div>
+</div>
+
+<div class="benefits">
+  <div class="our_panels col-lg-3">
+    <div class="benefits_img col-sm-2">
+      <img src="{% static 'img/panel.png' %}" alt="panel">
+    </div>
+    <div class="benefits_info col-sm-8">
+      <div class="separator"></div>
+      <h3>Наши панели</h3>
+      <p>Мы являемся самым крупным в
+  Европе производителем
+  цементно-стружечных
+   панелей. Производственная
+  можность линии
+  55 000 м³ в год.</p>
+    </div>
+  </div>
+  <div class="our_advice col-lg-3">
+    <div class="benefits_img col-sm-2">
+      <img src="{% static 'img/question.png' %}" alt="panel">
+    </div>
+    <div class="benefits_info col-sm-8">
+      <div class="separator"></div>
+      <h3>Мы Вам
+Посоветуем</h3>
+      <p>Рекламные материалы,
+проспекты, прайс-листы
+и другая полезная
+информация</p>
+    </div>
+  </div>
+  <div class="sertif col-lg-3">
+    <div class="benefits_img col-sm-2">
+      <img src="{% static 'img/network.png' %}" alt="panel">
+    </div>
+    <div class="benefits_info col-sm-8">
+      <div class="separator"></div>
+      <h3>Сертификация</h3>
+      <p>Панели CETRIS®
+сертефицированы по
+европейским согласованным
+стандартам.</p>
+    </div>
+  </div>
+  <div class="videoclip col-lg-3">
+    <div class="benefits_img col-sm-2">
+      <img src="{% static 'img/triangle.png' %}" alt="panel">
+    </div>
+    <div class="benefits_info col-sm-8">
+      <div class="separator"></div>
+      <h3>Видеоклипы</h3>
+      <p>Монтажные, инструктивные и
+имидж видеоклипы можно
+посмотреть.</p>
+    </div>
+  </div>
+</div>
+
+{#<div class="information">#}
+{#  <h1>Актуальная информация</h1>#}
+{#  <div class="row">#}
+{#    <div class="col-md-4 info_block">#}
+{#      <img src="{% static 'img/info_block.jpg' %}" alt="info">#}
+{#      <div class="publ_date">M / D / Y</div>#}
+{#      <h2>Новый в полной мере актуальный DVD</h2>#}
+{#    </div>#}
+{#    <div class="col-md-4 info_block">#}
+{#      <img src="{% static 'img/info_block.jpg' %}" alt="info">#}
+{#      <div class="publ_date">M / D / Y</div>#}
+{#      <h2>Новый в полной мере актуальный DVD</h2>#}
+{#    </div>#}
+{#    <div class="col-md-4 info_block">#}
+{#      <img src="{% static 'img/info_block.jpg' %}" alt="info">#}
+{#      <div class="publ_date">M / D / Y</div>#}
+{#      <h2>Новый в полной мере актуальный DVD</h2>#}
+{#    </div>#}
+{#    <div class="col-md-4 info_block">#}
+{#      <img src="{% static 'img/info_block.jpg' %}"md alt="info">#}
+{#      <div class="publ_date">M / D / Y</div>#}
+{#      <h2>Новый в полной мере актуальный DVD</h2>#}
+{#    </div>#}
+{#    <div class="col-md-4 info_block">#}
+{#      <img src="{% static 'img/info_block.jpg' %}" alt="info">#}
+{#      <div class="publ_date">M / D / Y</div>#}
+{#      <h2>Новый в полной мере актуальный DVD</h2>#}
+{#    </div>#}
+{#    <div class="col-md-4 info_block">#}
+{#      <img src="{% static 'img/info_block.jpg' %}" alt="info">#}
+{#      <div class="publ_date">M / D / Y</div>#}
+{#      <h2>Новый в полной мере актуальный DVD</h2>#}
+{#    </div>#}
+{#    <div class="col-md-4 info_block">#}
+{#      <img src="{% static 'img/info_block.jpg' %}" alt="info">#}
+{#      <div class="publ_date">M / D / Y</div>#}
+{#      <h2>Новый в полной мере актуальный DVD</h2>#}
+{#    </div>#}
+{#    <div class="col-md-4 info_block">#}
+{#      <img src="{% static 'img/info_block.jpg' %}" alt="info">#}
+{#      <div class="publ_date">M / D / Y</div>#}
+{#      <h2>Новый в полной мере актуальный DVD</h2>#}
+{#    </div>#}
+{#    <div class="col-md-4 info_block">#}
+{#      <img src="{% static 'img/info_block.jpg' %}" alt="info">#}
+{#      <div class="publ_date">M / D / Y</div>#}
+{#      <h2>Новый в полной мере актуальный DVD</h2>#}
+{#    </div>#}
+{#  </div>#}
+{#</div>#}
+{% include 'footer.html' %}
