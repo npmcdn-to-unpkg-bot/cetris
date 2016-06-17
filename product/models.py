@@ -67,6 +67,24 @@ class References(models.Model):
     )
     image_category = models.CharField(max_length=30, choices=image_joice, verbose_name="Izvēlēties kategoriju")
 
+class Instructions(models.Model):
+    class Meta:
+        db_table = "Instructions"
+        verbose_name = "Instrukcija"
+
+    instruction_category_choice = (
+        ("cat1", "Garantijas noteikumi"),
+        ("cat2", "Plākšņu montāžas instrukcijas un pielietojumi"),
+        ("cat3", "Plākšņu sertifikāti un ekspluatācijas īpašību deklerācijas")
+    )
+
+    instruction_time = models.DateTimeField(auto_now=False, auto_now_add=True, verbose_name="Pievienots")
+    instruction_updated = models.DateTimeField(auto_now=True, auto_now_add=False, verbose_name="pēdējo reizi labots")
+    instruction_name = models.CharField(max_length=150, verbose_name="Instrukcijas nosaukums")
+    instruction_category = models.CharField(max_length=150, choices=instruction_category_choice, verbose_name="Izvēlēties kategoriju")
+    instruction_data = models.FileField(upload_to="pdf", verbose_name="Instrukcija (PDF)", blank=True)
+
+
 
 # def create_slug(instance, new_slug=None):
 #     slug = slugify(instance.product_title)

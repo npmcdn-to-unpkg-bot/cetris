@@ -8,29 +8,27 @@
         <div class="instruction">
           <h3><b>Garantijas noteikumi</b></h3>
           <ul>
-            <li><a href="#">Tempsi garantijas noteikumi</a></li>
-            <li><a href="#">Cetris garantijas noteikumi</a></li>
+              {% for obj in instr %}
+                  {% if obj.instruction_category == "cat1" %}
+                      <li><a href="{{ MEDIA_URL }}{{ obj.instruction_data.url }}">{{ obj.instruction_name }}</a></li>
+                  {% endif %}
+              {% endfor %}
           </ul>
           <h3><b>Plākšņu montāžas instrukcijas un pielietojumi</b></h3>
           <ul>
-            <li><a href="#">Cetris Tehniskie dati un pamatnosacījumi ENG</a></li>
-            <li><a href="#">Fasādes sistēmas ENG</a></li>
-            <li><a href="#">Fasāžu sistēmu pamatnosacījumi</a></li>
-            <li><a href="#">Grīdu sistēmas ENG</a></li>
-            <li><a href="#">Pilnais Cetris katalogs, pielietojumi un sistēmas ENG</a></li>
-            <li><a href="#">Plākšņu uzglabāšānas noteikumi</a></li>
-            <li><a href="#">Ugunsdrošās sistēmas ENG</a></li>
+              {% for obj in instr %}
+                  {% if obj.instruction_category == "cat2" %}
+                      <li><a href="{{ MEDIA_URL }}{{ obj.instruction_data.url }}">{{ obj.instruction_name }}</a></li>
+                  {% endif %}
+              {% endfor %}
           </ul>
           <h3><b>Plākšņu sertifikāti un ekspluatācijas īpašību deklerācijas</b></h3>
           <ul>
-            <li><a href="#">Cetris ekspluatācijas īpašību deklerācija ENG</a></li>
-            <li><a href="#">Cetris Ekspluatācijas īpašību deklerācija LV</a></li>
-            <li><a href="#">Tempsi Colore ekspluatācijas īpašību deklerācija LV</a></li>
-            <li><a href="#">Tempsi Colore sertifikāts</a></li>
-            <li><a href="#">Tempsi Granito ekspluatācijas īpasibu deklerācija LV</a></li>
-            <li><a href="#">Tempsi Granito sertifikāts</a></li>
-            <li><a href="#">Tempsi Colore ekspluatācijas īpašību deklerācija ENG</a></li>
-            <li><a href="#">Tempsi Granito ekspluatācijas īpašību deklerācija ENG</a></li>
+              {% for obj in instr %}
+                  {% if obj.instruction_category == "cat3" %}
+                      <li><a href="{{ MEDIA_URL }}{{ obj.instruction_data.url }}">{{ obj.instruction_name }}</a></li>
+                  {% endif %}
+              {% endfor %}
           </ul>
         </div>
       </div>

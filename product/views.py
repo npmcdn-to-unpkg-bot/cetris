@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Product, References
+from .models import Product, References, Instructions
 
 def product(request, id=None):
     queryset = Product.objects.all()
@@ -31,4 +31,8 @@ def calculator(request):
     return render(request, "calculator.html", {})
 
 def instruction(request):
-    return render(request, "instrukcijas.html", {})
+    instructions = Instructions.objects.all()
+    context = {
+        "instr" : instructions
+    }
+    return render(request, "instrukcijas.html", context)
