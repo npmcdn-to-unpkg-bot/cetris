@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+  //Menu show
   $(".home_content .content_menu ul .mines_l").on("click", function() {
     $(".home_content .mines").css({"display": "block"});
     $(".home_content .mines").animate({
@@ -76,6 +78,8 @@ $(document).ready(function() {
     }, 500);
   })
 
+
+  //Home menu
   $(".home_content .content_block .walls_p").on("click", function() {
     setTimeout(function() {
       $(".home_content .roofs").css({"display": "none"});
@@ -670,4 +674,511 @@ $(document).ready(function() {
   $(function(){
     $('#Container').mixItUp();
   });
-})
+
+
+  //Point hover
+  $(".home_content .content_menu ul .walls_l").hover(
+      function() {
+        $(this).css({"color": "#fac11d"});
+        $(".home_content .points .point_outer_walls span").css({
+          "color": "#fac11d",
+          "opacity": 0,
+        });
+        $(".home_content .points .point_outer_walls .point_image img").css({
+          "opacity": 1,
+          "zIndex": 1000,
+        })
+      }, function() {
+        $(this).css({"color": "#ececec"});
+        $(".home_content .points .point_outer_walls span").css({
+          "color": "#fff",
+          "opacity": 1,
+        });
+        $(".home_content .points .point_outer_walls .point_image img").css({
+          "opacity": 0,
+          "zIndex": 1,
+        })
+      }
+  );
+
+    $(".home_content .content_menu ul .facade_l").hover(
+      function() {
+        $(this).css({"color": "#fac11d"});
+        $(".home_content .points .point_outer_facades span").css({
+          "color": "#fac11d",
+          "opacity": 0,
+        });
+        $(".home_content .points .point_outer_facades .point_image img").css({
+          "opacity": 1,
+          "zIndex": 1000,
+        })
+      }, function() {
+        $(this).css({"color": "#ececec"});
+        $(".home_content .points .point_outer_facades span").css({
+          "color": "#fff",
+          "opacity": 1,
+        });
+        $(".home_content .points .point_outer_facades .point_image img").css({
+          "opacity": 0,
+          "zIndex": 1,
+        })
+      }
+  );
+
+  $(".home_content .content_menu ul .floors_l").hover(
+      function() {
+        $(this).css({"color": "#fac11d"});
+        $(".home_content .points .point_outer_floors span").css({
+          "color": "#fac11d",
+          "opacity": 0,
+        });
+        $(".home_content .points .point_outer_floors .point_image img").css({
+          "opacity": 1,
+          "zIndex": 1000,
+        })
+      }, function() {
+        $(this).css({"color": "#ececec"});
+        $(".home_content .points .point_outer_floors span").css({
+          "color": "#fff",
+          "opacity": 1,
+        });
+        $(".home_content .points .point_outer_floors .point_image img").css({
+          "opacity": 0,
+          "zIndex": 1,
+        })
+      }
+  );
+  $(".home_content .content_menu ul .roofs_l").hover(
+      function() {
+        $(this).css({"color": "#fac11d"});
+        $(".home_content .points .point_outer_roofs span").css({
+          "color": "#fac11d",
+          "opacity": 0,
+        });
+        $(".home_content .points .point_outer_roofs .point_image img").css({
+          "opacity": 1,
+          "zIndex": 1000,
+        })
+      }, function() {
+        $(this).css({"color": "#ececec"});
+        $(".home_content .points .point_outer_roofs span").css({
+          "color": "#fff",
+          "opacity": 1,
+        });
+        $(".home_content .points .point_outer_roofs .point_image img").css({
+          "opacity": 0,
+          "zIndex": 1,
+        })
+      }
+  );
+    $(".home_content .content_menu ul .systems_l").hover(
+      function() {
+        $(this).css({"color": "#fac11d"});
+        $(".home_content .points .point_outer_systems span").css({
+          "color": "#fac11d",
+          "opacity": 0,
+        });
+        $(".home_content .points .point_outer_systems .point_image img").css({
+          "opacity": 1,
+          "zIndex": 1000,
+        })
+      }, function() {
+        $(this).css({"color": "#ececec"});
+        $(".home_content .points .point_outer_systems span").css({
+          "color": "#fff",
+          "opacity": 1,
+        });
+        $(".home_content .points .point_outer_systems .point_image img").css({
+          "opacity": 0,
+          "zIndex": 1,
+        })
+      }
+  );
+  $(".home_content .content_menu ul .ceilings_l").hover(
+      function() {
+        $(this).css({"color": "#fac11d"});
+        $(".home_content .points .point_outer_ceilings span").css({
+          "color": "#fac11d",
+          "opacity": 0,
+        });
+        $(".home_content .points .point_outer_ceilings .point_image img").css({
+          "opacity": 1,
+          "zIndex": 1000,
+        })
+      }, function() {
+        $(".home_content .points .point_outer_ceilings span").css({
+          "color": "#fff",
+          "opacity": 1,
+        });
+        $(".home_content .points .point_outer_ceilings .point_image img").css({
+          "opacity": 0,
+          "zIndex": 1,
+        });
+        $(this).css({"color": "#ececec"});
+      }
+  );
+    $(".home_content .content_menu ul .formworks_l").hover(
+      function() {
+        $(this).css({"color": "#fac11d"});
+        $(".home_content .points .point_outer_formworks span").css({
+          "color": "#fac11d",
+          "opacity": 0,
+        });
+        $(".home_content .points .point_outer_formworks .point_image img").css({
+          "opacity": 1,
+          "zIndex": 1000,
+        })
+      }, function() {
+        $(".home_content .points .point_outer_formworks span").css({
+          "color": "#fff",
+          "opacity": 1,
+        });
+        $(".home_content .points .point_outer_formworks .point_image img").css({
+          "opacity": 0,
+          "zIndex": 1,
+        });
+        $(this).css({"color": "#ececec"});
+      }
+  );
+  $(".home_content .content_menu ul .balcones_l").hover(
+      function() {
+        $(this).css({"color": "#fac11d"});
+        $(".home_content .points .point_outer_balcones span").css({
+          "color": "#fac11d",
+          "opacity": 0,
+        });
+        $(".home_content .points .point_outer_balcones .point_image img").css({
+          "opacity": 1,
+          "zIndex": 1000,
+        })
+      }, function() {
+        $(".home_content .points .point_outer_balcones span").css({
+          "color": "#fff",
+          "opacity": 1,
+        });
+        $(".home_content .points .point_outer_balcones .point_image img").css({
+          "opacity": 0,
+          "zIndex": 1,
+        });
+        $(this).css({"color": "#ececec"});
+      }
+  );
+    $(".home_content .content_menu ul .transports_l").hover(
+      function() {
+        $(this).css({"color": "#fac11d"});
+        $(".home_content .points .point_outer_transports span").css({
+          "color": "#fac11d",
+          "opacity": 0,
+        });
+        $(".home_content .points .point_outer_transports .point_image img").css({
+          "opacity": 1,
+          "zIndex": 1000,
+        })
+      }, function() {
+        $(this).css({"color": "#ececec"});
+        $(".home_content .points .point_outer_transports span").css({
+          "color": "#fff",
+          "opacity": 1,
+        });
+        $(".home_content .points .point_outer_transports .point_image img").css({
+          "opacity": 0,
+          "zIndex": 1,
+        })
+      }
+  );
+  $(".home_content .content_menu ul .hobby_l").hover(
+      function() {
+        $(this).css({"color": "#fac11d"});
+        $(".home_content .points .point_outer_hobby span").css({
+          "color": "#fac11d",
+          "opacity": 0,
+        });
+        $(".home_content .points .point_outer_hobby .point_image img").css({
+          "opacity": 1,
+          "zIndex": 1000,
+        })
+      }, function() {
+        $(this).css({"color": "#ececec"});
+        $(".home_content .points .point_outer_hobby span").css({
+          "color": "#fff",
+          "opacity": 1,
+        });
+        $(".home_content .points .point_outer_hobby .point_image img").css({
+          "opacity": 0,
+          "zIndex": 1,
+        })
+      }
+  );
+
+  //DOT hover
+  $(".home_content .points .point_outer_hobby .point_hobby").hover(
+      function() {
+        $(".home_content .points .point_outer_hobby span").css({
+          "color": "#fac11d",
+          "opacity": 0,
+        });
+        $(".home_content .points .point_outer_hobby .point_image img").css({
+          "opacity": 1,
+          "zIndex": 1000,
+        });
+        $(".home_content .content_menu ul .hobby_l").css({
+          "color": "#fac11d",
+        })
+      }, function() {
+        $(".home_content .points .point_outer_hobby span").css({
+          "color": "#fff",
+          "opacity": 1,
+        });
+        $(".home_content .points .point_outer_hobby .point_image img").css({
+          "opacity": 0,
+          "zIndex": 1,
+        });
+        $(".home_content .content_menu ul .hobby_l").css({
+          "color": "#ececec",
+        })
+      }
+  );
+  $(".home_content .points .point_outer_transports .point_transports").hover(
+      function() {
+        $(".home_content .points .point_outer_transports span").css({
+          "color": "#fac11d",
+          "opacity": 0,
+        });
+        $(".home_content .points .point_outer_transports .point_image img").css({
+          "opacity": 1,
+          "zIndex": 1000,
+        });
+        $(".home_content .content_menu ul .transports_l").css({
+          "color": "#fac11d",
+        });
+      }, function() {
+        $(".home_content .points .point_outer_transports span").css({
+          "color": "#fff",
+          "opacity": 1,
+        });
+        $(".home_content .points .point_outer_transports .point_image img").css({
+          "opacity": 0,
+          "zIndex": 1,
+        });
+        $(".home_content .content_menu ul .transports_l").css({
+          "color": "#ececec",
+        });
+      }
+  );
+  $(".home_content .points .point_outer_balcones .point_balcones").hover(
+      function() {
+        $(".home_content .points .point_outer_balcones span").css({
+          "color": "#fac11d",
+          "opacity": 0,
+        });
+        $(".home_content .points .point_outer_balcones .point_image img").css({
+          "opacity": 1,
+          "zIndex": 1000,
+        });
+        $(".home_content .content_menu ul .balcones_l").css({
+          "color": "#fac11d",
+        })
+      }, function() {
+        $(".home_content .points .point_outer_balcones span").css({
+          "color": "#fff",
+          "opacity": 1,
+        });
+        $(".home_content .points .point_outer_balcones .point_image img").css({
+          "opacity": 0,
+          "zIndex": 1,
+        });
+        $(".home_content .content_menu ul .balcones_l").css({
+          "color": "#ececec",
+        });
+      }
+  );
+  $(".home_content .points .point_outer_formworks .point_formworks").hover(
+      function() {
+        $(".home_content .points .point_outer_formworks span").css({
+          "color": "#fac11d",
+          "opacity": 0,
+        });
+        $(".home_content .points .point_outer_formworks .point_image img").css({
+          "opacity": 1,
+          "zIndex": 1000,
+        });
+        $(".home_content .content_menu ul .formworks_l").css({
+          "color": "#fac11d",
+        })
+      }, function() {
+        $(".home_content .points .point_outer_formworks span").css({
+          "color": "#fff",
+          "opacity": 1,
+        });
+        $(".home_content .points .point_outer_formworks .point_image img").css({
+          "opacity": 0,
+          "zIndex": 1,
+        });
+        $(".home_content .content_menu ul .formworks_l").css({
+          "color": "#ececec",
+        });
+      }
+  );
+  $(".home_content .points .point_outer_roofs .point_roofs").hover(
+      function() {
+        $(".home_content .points .point_outer_roofs span").css({
+          "color": "#fac11d",
+          "opacity": 0,
+        });
+        $(".home_content .points .point_outer_roofs .point_image img").css({
+          "opacity": 1,
+          "zIndex": 1000,
+        });
+        $(".home_content .content_menu ul .roofs_l").css({
+          "color": "#fac11d",
+        });
+      }, function() {
+        $(".home_content .points .point_outer_roofs span").css({
+          "color": "#fff",
+          "opacity": 1,
+        });
+        $(".home_content .points .point_outer_roofs .point_image img").css({
+          "opacity": 0,
+          "zIndex": 1,
+        });
+        $(".home_content .content_menu ul .roofs_l").css({
+          "color": "#ececec",
+        })
+      }
+  );
+  $(".home_content .points .point_outer_systems .point_systems").hover(
+      function() {
+        $(".home_content .points .point_outer_systems span").css({
+          "color": "#fac11d",
+          "opacity": 0,
+        });
+        $(".home_content .points .point_outer_systems .point_image img").css({
+          "opacity": 1,
+          "zIndex": 1000,
+        });
+        $(".home_content .content_menu ul .systems_l").css({
+          "color": "#fac11d",
+        });
+      }, function() {
+        $(".home_content .points .point_outer_systems span").css({
+          "color": "#fff",
+          "opacity": 1,
+        });
+        $(".home_content .points .point_outer_systems .point_image img").css({
+          "opacity": 0,
+          "zIndex": 1,
+        });
+        $(".home_content .content_menu ul .systems_l").css({
+          "color": "#ececec",
+        });
+      }
+  );
+  $(".home_content .points .point_outer_ceilings .point_ceilings").hover(
+      function() {
+        $(".home_content .points .point_outer_ceilings span").css({
+          "color": "#fac11d",
+          "opacity": 0,
+        });
+        $(".home_content .points .point_outer_ceilings .point_image img").css({
+          "opacity": 1,
+          "zIndex": 1000,
+        });
+        $(".home_content .content_menu ul .ceilings_l").css({
+          "color": "#fac11d",
+        });
+      }, function() {
+        $(".home_content .points .point_outer_ceilings span").css({
+          "color": "#fff",
+          "opacity": 1,
+        });
+        $(".home_content .points .point_outer_ceilings .point_image img").css({
+          "opacity": 0,
+          "zIndex": 1,
+        });
+        $(".home_content .content_menu ul .ceilings_l").css({
+          "color": "#ececec",
+        });
+      }
+  );
+  $(".home_content .points .point_outer_floors .point_floors").hover(
+      function() {
+        $(".home_content .points .point_outer_floors span").css({
+          "color": "#fac11d",
+          "opacity": 0,
+        });
+        $(".home_content .points .point_outer_floors .point_image img").css({
+          "opacity": 1,
+          "zIndex": 1000,
+        });
+        $(".home_content .content_menu ul .floors_l").css({
+          "color": "#fac11d",
+        });
+      }, function() {
+        $(".home_content .points .point_outer_floors span").css({
+          "color": "#fff",
+          "opacity": 1,
+        });
+        $(".home_content .points .point_outer_floors .point_image img").css({
+          "opacity": 0,
+          "zIndex": 1,
+        });
+        $(".home_content .content_menu ul .floors_l").css({
+          "color": "#ececec",
+        })
+      }
+  );
+  $(".home_content .points .point_outer_facades .point_facades").hover(
+      function() {
+        $(".home_content .points .point_outer_facades span").css({
+          "color": "#fac11d",
+          "opacity": 0,
+        });
+        $(".home_content .points .point_outer_facades .point_image img").css({
+          "opacity": 1,
+          "zIndex": 1000,
+        });
+        $(".home_content .content_menu ul .facade_l").css({
+          "color": "#fac11d",
+        });
+      }, function() {
+        $(".home_content .points .point_outer_facades span").css({
+          "color": "#fff",
+          "opacity": 1,
+        });
+        $(".home_content .points .point_outer_facades .point_image img").css({
+          "opacity": 0,
+          "zIndex": 1,
+        });
+        $(".home_content .content_menu ul .facade_l").css({
+          "color": "#ececec",
+        });
+      }
+  );
+  $(".home_content .points .point_outer_walls .point_walls").hover(
+      function() {
+        $(".home_content .points .point_outer_walls span").css({
+          "color": "#fac11d",
+          "opacity": 0,
+        });
+        $(".home_content .points .point_outer_walls .point_image img").css({
+          "opacity": 1,
+          "zIndex": 1000,
+        });
+        $(".home_content .content_menu ul .walls_l").css({
+          "color": "#fac11d",
+        });
+      }, function() {
+        $(".home_content .points .point_outer_walls span").css({
+          "color": "#fff",
+          "opacity": 1,
+        });
+        $(".home_content .points .point_outer_walls .point_image img").css({
+          "opacity": 0,
+          "zIndex": 1,
+        });
+        $(".home_content .content_menu ul .walls_l").css({
+          "color": "#ececec",
+        });
+      }
+  );
+});
